@@ -57,6 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 10,
                   ),
+
                   // password
                   MyTextField(
                     controller: passwordController,
@@ -77,6 +78,28 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 
                   const SizedBox(
+                    height: 10,
+                  ),
+
+                  // forgotpassword
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: Text(
+                          'Forgot password?',
+                          style: TextStyle(
+                            color: Colors.grey.shade800,
+                            fontSize: 14,
+                            fontFamily: 'Poppins',
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  const SizedBox(
                     height: 30,
                   ),
 
@@ -85,7 +108,38 @@ class _LoginPageState extends State<LoginPage> {
                     text: "Log in",
                   ),
 
+                  const SizedBox(
+                    height: 30,
+                  ),
                   // register
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Don't have an account?",
+                        style: TextStyle(
+                          color: Colors.grey[800],
+                          fontSize: 15,
+                          fontFamily: 'Poppins',
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      InkWell(
+                        onTap: () {},
+                        child: const Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 6, 122, 255),
+                            fontSize: 15,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),

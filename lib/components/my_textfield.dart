@@ -19,6 +19,9 @@ class MyTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       obscureText: obscureText,
+      cursorColor: Colors.grey,
+      style: const TextStyle(
+          color: Colors.black, fontSize: 16, fontFamily: "Poppins"),
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.grey.shade400),
